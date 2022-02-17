@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+	<title>Cadastrar usuário</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+</h:head>
+
+<h:body>
+	<nav>
+		<h:form>
+			<h:commandButton action = "#{navigationController.goToHomePage}" value = "Lojinha" />
+		</h:form>
+	</nav>
+	<div id="content">
+		<div id="box">
+			<h3>Criar acesso</h3>
+			<h:form id="loginForm">
+				<h:inputText id="inputFullName" a:placeholder="Nome completo" value="#{registrationController.fullName}" />
+				<h:inputText id="inputCpf" a:placeholder="CPF" value="#{registrationController.cpf}" />
+				<h:inputText id="inputPhoneNumber" a:placeholder="Celular" value="#{registrationController.phoneNumber}" />
+				<h:inputText id="inputUsername" a:placeholder="E-mail" value="#{registrationController.login}" />
+				<h:inputSecret id="inputPassword" a:placeholder="Senha" value="#{registrationController.password}" />
+				<h:inputText id="inputAddress" a:placeholder="Endereço" value="#{registrationController.address}" />
+				<div id="commandSection" class="align-right">
+					<h:commandButton action="#{registrationController.registrationUser}" value="Cadastrar"/>
+				</div>
+			</h:form>
+		</div>
+	</div>
+</h:body>
+
+</html>

@@ -1,0 +1,13 @@
+br\com\store\utils\JPAUtil.class
+br\com\store\controllers\LoginController.class
+br\com\store\controllers\RegistrationController.class
+br\com\store\models\Purchase.class
+br\com\store\dao\UserDao.class
+br\com\store\models\Product.class
+br\com\store\controllers\NavigationController.class
+br\com\store\dao\GenericDao.class
+br\com\store\dao\ProductDao.class
+br\com\store\dao\PurchaseDao.class
+br\com\store\utils\Test.class
+br\com\store\controllers\StoreController.class
+br\com\store\models\User.class

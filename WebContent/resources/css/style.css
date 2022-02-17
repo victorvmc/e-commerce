@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.align-left {
+	justify-content: flex-start !important;
+}
+
+.align-center {
+	justify-content: center !important;
+}
+
+.align-right {
+	justify-content: flex-end !important;
+}
+
+nav {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #000;	
+}
+
+nav > form {
+	display: flex;
+}
+
+nav > form > input[type="submit" i] {
+	border: 0;
+	color: #fff;
+	padding: 0 1em;
+	cursor: pointer;
+	font-size: 1rem;
+	background-color: #000;
+}
+
+#content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 50px);
+}
+
+#box {
+	border: 1px;
+	padding: 1em;
+	width: 400px;
+	border-style: solid;
+}
+
+#box > h3 {
+	margin-bottom: .5em;
+}
+
+#box > form {
+	display: flex;
+	flex-direction: column;
+}
+
+#box > form > input {
+	height: 30px;
+	padding-left: .5em;
+	margin-bottom: 1em !important;
+}
+
+#commandSection {
+	display: flex;
+	justify-content: space-between;
+}
+
+#loginForm > #commandSection > input[type = "submit"] {
+	width: fit-content;
+	padding: .25em 1em;
+}
+
+.produto-thumb {
+	width: 280px;
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px #aaa;
+}
+
+.centering {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.preco {
+	font-size: 20px;
+	font-weight: bold;
+	color: #1e7e34;
+}
+
+.descricao {
+	background-color: #eee;
+	max-width: 100%;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.comprar {
+	margin-top: 10px;
+}
+
+.centralizar-pagina {
+	margin-top: 30vh;
+	margin-left: 40vw;
+	margin-right: 40vw;
+}
+
+.centralizar-pagina-cadastre-se {
+	margin-top: 20vh;
+	margin-left: 40vw;
+	margin-right: 40vw;
+}
+
+.box-produtos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
